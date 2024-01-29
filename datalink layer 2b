@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int window = 0;
+    printf("Enter Window size: ");
+    scanf("%d", &window);
+
+    int sent, ack, i = 0;
+
+    while (1) {
+        for (i = 0; i < window; i++) {
+            printf("Frame Transmitted %d \n", sent);
+            sent++;
+
+            if (sent == window) {
+                break;
+            }
+        }
+
+        printf("Enter last received acknowledgment: ");
+        scanf("%d", &ack);
+
+        if (ack == window) {
+            break;
+        } else {
+            // Additional code can be added here if needed
+        }
+    }
+
+    return 0;
+}
